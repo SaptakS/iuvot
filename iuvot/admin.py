@@ -2,7 +2,7 @@ from django.contrib import admin
 
 
 class RestrictedAdminSite(admin.AdminSite):
-    site_header = "Monty Python administration"
+    site_header = "Iuvot Login"
 
     def get_urls(self):
         # delete all urls apart from a restricted few
@@ -20,6 +20,4 @@ class RestrictedAdminSite(admin.AdminSite):
             for url in urls
             if hasattr(url, "name") and url.name in restricted_url_names
         ]
-        print(urls)
-        print(restricted_urls)
         return restricted_urls

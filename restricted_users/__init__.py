@@ -1,0 +1,1 @@
+# This app is there to put restrictions on django admin & users

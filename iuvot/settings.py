@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
+    # "django.contrib.admin",
+    "iuvot.apps.RestrictedAdminConfig",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -85,7 +86,6 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 if not DEBUG:
-
     AUTH_PASSWORD_VALIDATORS = [
         {
             "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",

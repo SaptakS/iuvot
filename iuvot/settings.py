@@ -105,6 +105,14 @@ if not DEBUG:
 
 AUTH_USER_MODEL = 'restricted_users.User'
 
+# Only fields allowed are first_name, last_name, email
+# If the custom User model has other custom fields, then
+# they can be added as well.
+REQUIRED_USER_FIELDS = [
+    "first_name",
+    "last_name"
+]
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 

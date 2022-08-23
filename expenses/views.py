@@ -8,7 +8,7 @@ from expenses.models import Expense
 
 
 def view_expenses(request):
-    expenses = Expense.objects.all()
+    expenses = Expense.objects.aggregate_by_month()
     return render(request, 'expense_dashboard.html', {'expenses': expenses})
 
 def add_expense(request):

@@ -1,16 +1,18 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Amount</th>
+      <th>Month</th>
+      <th>Total</th>
     </tr>
   </thead>
   <tbody>
     {% for expense in expenses %}
     <tr>
-      <td>{{ expense.expense_name }}</td>
-      <td>{{ expense.amount_in_inr }}</td>
+      <td>{{ expense.month|date:'F' }}</td>
+      <td>{{ expense.sum|floatformat:2 }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
+
+<a href="{% url 'add_expense' %}">Add expense</a>

@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for expense in expenses %}
+    <tr>
+      <td>{{ expense.expense_name }}</td>
+      <td>{{ expense.amount_in_inr }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

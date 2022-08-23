@@ -8,6 +8,7 @@ authors = ["Saptak S"]
 python = "^3.9"
 django = "^4.1"
 pyotp = "^2.6.0"
+CurrencyConverter = "^0.17"
 
 [tool.poetry.dev-dependencies]
 

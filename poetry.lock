@@ -10,6 +10,14 @@ python-versions = ">=3.7"
 tests = ["mypy (>=0.800)", "pytest-asyncio", "pytest"]
 
 [[package]]
+name = "currencyconverter"
+version = "0.17"
+description = "A currency converter using the European Central Bank data."
+category = "main"
+optional = false
+python-versions = ">=3.6.1"
+
+[[package]]
 name = "django"
 version = "4.1"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -53,10 +61,11 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d3e382b2f4432f79eced66f1e354f961e48cfac509fa9af827a4ee399f8cd85b"
+content-hash = "41a039a51e7ac13195bb9aaaa71d36bd7492134938a125adc38ae231a1c225c1"
 
 [metadata.files]
 asgiref = []
+currencyconverter = []
 django = []
 pyotp = []
 sqlparse = []
